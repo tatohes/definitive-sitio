@@ -359,3 +359,16 @@ aside {
     font-size: 20px;
 }
 
+                                        /* Media Queries */
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+}
