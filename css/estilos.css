@@ -1,0 +1,361 @@
+                                        /* RESETEO */
+* {
+    margin: 3;
+    padding: 3;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+html {
+    background-color: green;
+}
+
+                                        /* HEADER */
+
+.header {
+    height: 100px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+.header__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Eje principal */
+    align-items: center; /* Eje secundario */
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    height: 50px;
+    width: 50px;
+}
+
+.header__logo img {
+    height: 100%;
+}
+
+.flex-header-hijo {
+    padding: 5px;
+    /* width: 100px;
+    height: 100px; */
+    color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+.flex-header--30 {
+    width: 30%;
+}
+
+.flex-header-70 {
+    width: 70%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav__lista {
+    font-weight: bold;
+    display: flex;
+    }
+
+.nav__logo {
+    margin-left: 2rem;
+}
+
+.nav__item {
+    margin-right: 2rem;
+}
+
+.nav__enlace {
+    color: rgb(255, 245, 233);
+    text-decoration: none;
+}
+
+                                        /* MAIN INDEX */
+
+                                        /* TÍTULOS */
+
+.titulo {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 100px;
+    color: antiquewhite;
+
+    margin-bottom: 2rem; 
+}
+
+.copete {
+    color: antiquewhite;
+    font-size: 30px;
+    margin-bottom: auto;
+}
+
+                                        /* PRIMER CONTENEDOR INDEX */
+
+.caja {
+    /* border: 3px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 5rem;
+    max-width: 1600px; */
+    width: 95%;
+    min-height: 100vh;
+    /* padding: 1rem; */
+}
+
+.grid__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.grid__flex h2 {
+    font-size: 150px;
+    line-height: 120px;
+}
+
+.grid__flex h1 {
+    font-size: 60px;
+    margin-bottom: none;
+    justify-self: end;
+}
+
+.grid__flex p {
+    font-size: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 48% 50%;
+    grid-template-rows: 1fr;
+    /* grid-template-areas: 
+        "imagen copete"
+        "imagen titulo"
+        "imagen texto"; 
+    justify-items: stretch;
+    align-items: left; */
+    justify-content: space-between; 
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+                                        /* SEGUNDO CONTENEDOR INDEX */
+
+.caja2 {
+    /* border: 3px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    max-width: 1600px;
+    width: 95%;
+    min-height: 50vh;
+    /* padding: 1rem; */
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column; 
+}
+
+.grid__flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.grid__flex2 h3 {
+    font-size: 70px;
+    line-height: 120px;
+}
+
+                                        /* CONTENEDOR PÁGINA CONTACTO */
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "logoTelefono telefono qr"
+        "logoInstagram instagram qr"
+        "logoGmail gmail qr"
+        "logoDireccion direccion qr";
+    gap: 10px;
+    flex-direction: row;
+    color: antiquewhite;
+}
+
+/* .grid3 > * {
+    border: 1px solid orange;
+} */
+
+section#logoTelefono {
+    grid-area: logoTelefono;
+    align-self: center;
+    justify-self: center;
+}
+
+section#logoInstagram {
+    grid-area: logoInstagram;
+    align-self: center;
+    justify-self: center;
+}
+
+section#logoGmail {
+    grid-area: logoGmail;
+    align-self: center;
+    justify-self: center;
+}
+
+section#logoDireccion {
+    grid-area: logoDireccion;
+    align-self: center;
+    justify-self: center;
+}
+
+section#telefono {
+    grid-area: telefono;
+    align-self: center;
+    justify-self: left;
+    font-size: 60px;
+}
+
+section#instagram {
+    grid-area: instagram;
+    align-self: center;
+    justify-self: left;
+    font-size: 60px;
+}
+
+section#gmail {
+    grid-area: gmail;
+    align-self: center;
+    justify-self: left;
+    font-size: 60px;
+}
+
+section#direccion {
+    grid-area: direccion;
+    align-self: center;
+    justify-self: left;
+    font-size: 60px;
+}
+
+aside {
+    grid-area: qr;
+    align-self: center;
+}
+
+                                        /* TARJETA QR WHATSAPP PÁGINA CONTACTO */
+
+.bem {
+    height: 100vh;
+    padding: 5rem 0;
+}
+
+.bem__h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: antiquewhite;
+
+    margin-bottom: 2rem;
+}
+
+.tarjetaWhatsapp {
+    background-color: antiquewhite;
+    box-shadow: 5px 10px 10px rgba(10, 43, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+
+    width: 300px;
+    padding: 1rem;
+    margin: 0 auto;
+
+    position: relative;
+
+}
+
+.tarjeta__imagen {
+    border-radius: inherit;
+
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.tarjeta__titulo {
+    color: rgb(8, 77, 8);
+    font-size: 22px;
+
+    margin: 1rem 0;
+}
+
+.tarjeta__texto {
+    color: rgb(10, 117, 10);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.tarjeta__icono {
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+
+    height: 30px;
+    width: 30px;
+
+    display: block;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.tarjeta__icono i {
+    line-height: 30px;
+}
+
+                                        /* FOOTER */
+
+.footer {
+    height: 100px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+.footer__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Eje principal */
+    align-items: center; /* Eje secundario */
+    flex-wrap: wrap;
+}
+
+.flex-footer-hijo {
+    padding: 5px;
+    /* width: 100px;
+    height: 100px; */
+    color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
