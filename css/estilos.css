@@ -28,6 +28,7 @@ html {
     justify-content: space-between; /* Eje principal */
     align-items: center; /* Eje secundario */
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .header__logo {
@@ -46,7 +47,7 @@ html {
     color: antiquewhite;
     font-weight: bold;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .flex-header--30 {
@@ -95,7 +96,7 @@ ul {
 .titulo {
     text-align: center;
     letter-spacing: 3px;
-    font-size: 100px;
+    font-size: 70px;
     color: antiquewhite;
 
     margin-bottom: 2rem; 
@@ -128,7 +129,7 @@ ul {
 }
 
 .grid__flex h2 {
-    font-size: 150px;
+    font-size: 140px;
     line-height: 120px;
 }
 
@@ -153,6 +154,7 @@ ul {
     justify-items: stretch;
     align-items: left; */
     justify-content: space-between; 
+    margin-bottom: 100px;
 }
 
 .grid img {
@@ -220,6 +222,7 @@ ul {
     color: antiquewhite;
     font-size: 50px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
                                         /* CONTENEDOR PÁGINA CONTACTO */
@@ -236,6 +239,7 @@ ul {
     gap: 10px;
     flex-direction: row;
     color: antiquewhite;
+    margin-bottom: 200px;
 }
 
 /* .grid3 > * {
@@ -270,28 +274,28 @@ section#telefono {
     grid-area: telefono;
     align-self: center;
     justify-self: left;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 section#instagram {
     grid-area: instagram;
     align-self: center;
     justify-self: left;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 section#gmail {
     grid-area: gmail;
     align-self: center;
     justify-self: left;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 section#direccion {
     grid-area: direccion;
     align-self: center;
     justify-self: left;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 aside {
@@ -299,11 +303,30 @@ aside {
     align-self: center;
 }
 
+                                        /* PAGINA PERFUMERIA */
+
+.gridPerfumeria {
+    display: grid;
+    grid-template-columns: 33% 33% 32%;
+    grid-template-rows: 300px 300px 300px;
+    /* justify-content: space-between; */
+    align-content: center;
+    flex-direction: column; 
+    margin: 100px;
+    color: antiquewhite;
+    font-size: 100px;
+}
+
+.gridPerfumeria > * {
+    border: 1px solid orange;
+}
+
                                         /* TARJETA QR WHATSAPP PÁGINA CONTACTO */
 
 .bem {
     height: 100vh;
     padding: 5rem 0;
+    margin-bottom: 130px;
 }
 
 .bem__h2 {
@@ -311,6 +334,7 @@ aside {
     letter-spacing: 3px;
     font-size: 30px;
     color: antiquewhite;
+    align-content: center;
 
     margin-bottom: 2rem;
 }
@@ -411,6 +435,22 @@ aside {
     .hero__contenedor {
         flex-direction: column;
     }
+
+    .perfu__contenedor {
+        flex-direction: column;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer__contenedor {
+        flex-direction: column;
+    }
+
+    .tabla {
+        font-size: 90%;
+    }
 }
 
 /* MOBILE */
@@ -419,5 +459,26 @@ aside {
     .nav__lista {
         flex-wrap: wrap;
         gap: 20px;
+    }
+    
+    .perfu__contenedor {
+        flex-direction: column;
+    }
+
+    .grid__flex2 h3 {
+        font-size: 30px;
+    }
+
+    .footer {
+        height: auto;
+        justify-content: center;
+    }
+
+    .footer__contenedor {
+        flex-direction: column;
+    }
+
+    .tabla {
+        font-size: 70%;
     }
 }
