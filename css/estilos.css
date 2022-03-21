@@ -321,6 +321,100 @@ aside {
     border: 1px solid orange;
 }
 
+                                        /* PERFUMES */
+
+.perfumes {
+    padding: 100px 1rem;
+    min-height: 50vh;
+    /* background-color: black; */
+    /* color: antiquewhite; */
+    /* gap: 20px; */
+}
+
+.perfumes__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+        "foto1 foto2 foto3"
+        "foto4 foto5 foto6"
+        "foto7 foto8 foto9";
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+div#foto1 {
+    grid-area: foto1;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto2 {
+    grid-area: foto2;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto3 {
+    grid-area: foto3;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto4 {
+    grid-area: foto4;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto5 {
+    grid-area: foto5;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto6 {
+    grid-area: foto6;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto7 {
+    grid-area: foto7;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto8 {
+    grid-area: foto8;
+    align-self: center;
+    justify-self: center;
+}
+
+div#foto9 {
+    grid-area: foto9;
+    align-self: center;
+    justify-self: center;
+}
+
+.perfumes__item {
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+}
+
+.perfumes__grid img {
+    border-radius: 5px;
+}
+
+
+
                                         /* TARJETA QR WHATSAPP PÁGINA CONTACTO */
 
 .bem {
@@ -427,6 +521,7 @@ aside {
 .nav__item--oculto {
     display: none;
 }
+
 
                                         /* Media Queries */
 
