@@ -402,6 +402,34 @@ aside {
     animation-duration: 2s;
     animation-delay: 1s;
 
+/* Animacion Grid - OVERLAY */
+
+.grid__container__img {
+    width: 100%;
+}
+
+
+.overlay {
+    /* background-color: antiquewhite; */
+    color: green;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(0%, -100%);
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.ofertas__grid:hover .overlay{
+    opacity: 1;
+
+}
+
+.grid__container__img--top {
+    margin-top: 62px;
+}
+
+.
 
                                         /* TARJETA QR WHATSAPP PÁGINA CONTACTO */
 
