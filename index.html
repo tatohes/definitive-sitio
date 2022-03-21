@@ -28,7 +28,8 @@
                 </div>
                 <div class="flex-header-hijo flex-header--70">
                     <nav>
-                        <ul class="nav__lista">
+                        <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars" style="color: antiquewhite;"></i></a>
+                        <ul class="nav__lista" id="sidebar">
                             <li class="nav__item">
                                 <a class="nav__enlace nav_enlace--activo" href="index.html">Inicio</a>
                             </li>
@@ -44,6 +45,9 @@
                             <li class="nav__item">
                                 <a class="nav__enlace" href="pages/contacto.html">Contacto</a>
                             </li>
+                            <li class="nav__item nav__item--oculto"> <!-- sidebar -->
+                                <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
+                            </li>
                         </ul>
                     </nav>  
                 </div>
@@ -52,7 +56,7 @@
     <main>
         <section class="caja grid">
                 <div class="hero__left">
-                    <img src="./imagenes/farmassssok.jpg" alt="Equipo farmacéutico">
+                    <img src="./imagenes/farmassssok.jpg" style="width: 100%;" alt="Equipo farmacéutico">
                 </div>
                 <div class="grid__flex">
                     <h1 class="hero__copete">Bienvenidos a</h1>
