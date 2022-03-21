@@ -214,6 +214,14 @@ ul {
     margin-top: -50px;
 }
 
+                                        /* TABLA PÁGINA FARMACIAS DE TURNO */
+
+.tabla {
+    color: antiquewhite;
+    font-size: 50px;
+    margin: auto;
+}
+
                                         /* CONTENEDOR PÁGINA CONTACTO */
 
 .grid3 {
