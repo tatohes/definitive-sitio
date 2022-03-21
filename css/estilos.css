@@ -400,10 +400,24 @@ aside {
 
 @media screen and (max-width: 1024px) {
 
+    .header {
+        height: auto;
+    }
+
+    .header__contenedor {
+        flex-direction: column;
+    }
+
+    .hero__contenedor {
+        flex-direction: column;
+    }
 }
 
 /* MOBILE */
 
 @media screen and (max-width: 600px) {
-
+    .nav__lista {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
