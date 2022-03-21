@@ -99,7 +99,20 @@ ul {
     font-size: 70px;
     color: antiquewhite;
 
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
+    
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .copete {
@@ -167,14 +180,26 @@ ul {
 
 .hero__copete {
     margin-bottom: -90px;
+
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
 
 .hero__parrafo {
     margin-top: -60px;
+
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
 
 .hero__titulo {
     color: rgb(240, 200, 148);
+
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
 
                                         /* SEGUNDO CONTENEDOR INDEX */
@@ -319,6 +344,7 @@ aside {
     grid-template-rows: 300px;
     max-width: 1200px;
     margin: 0 auto;
+    /* transform: scaleX(3); */
 }
 
 .ofertas__item {
@@ -355,6 +381,26 @@ aside {
     border-radius: 5px;
 }
 
+@keyframes efecto_perfumes {
+    0%{ width: 100px; }
+    0.2s{ width: 50px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+    background-color: red; }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+    background-color:green; }
+    
+}
+/* section {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: efecto_perfumes;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
 
 
                                         /* TARJETA QR WHATSAPP PÁGINA CONTACTO */
